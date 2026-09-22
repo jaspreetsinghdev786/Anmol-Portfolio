@@ -1165,13 +1165,28 @@ for IdoSell Team</p></div></div></div></div></div></div></div></div></div></div>
         img.alt="Anmol Editor Portfolio project";
     });
   }
+  // The Framer bundle re-injects the original booking link on every render
+  function scrubLinks(){
+    document.querySelectorAll('a[href*="calendar.google.com"]').forEach(function(a){
+      a.setAttribute("href","#");
+      a.removeAttribute("target");
+      a.removeAttribute("rel");
+    });
+  }
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest("a[href]");
+    if(a&&/calendar\.google\.com/i.test(a.getAttribute("href")||"")){
+      e.preventDefault(); e.stopPropagation();
+      a.setAttribute("href","#");
+    }
+  },true);
   var EMAIL="anmoltathger@gmail.com";
   document.addEventListener("click",function(e){
     var pill=e.target&&e.target.closest&&e.target.closest('[data-framer-name="Default"],[data-framer-name="Content - Default"]');
     if(!pill||!/@/.test(pill.textContent||"")) return;
     if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(EMAIL);
   },true);
-  function apply(){ scrub(document.body); scrubAlts(); mountPhones(); }
+  function apply(){ scrub(document.body); scrubAlts(); scrubLinks(); mountPhones(); }
   var pending=null, obs=null;
   function schedule(){
     if(pending) return;
