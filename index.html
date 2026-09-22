@@ -14,7 +14,7 @@
 
 	<meta name="generator" content="Framer 69e7cf7">
 
-	<title>Anmol | Editor Portfolio</title>
+	<title>Anmolpreet Singh | Video Editor</title>
 
     <meta name="description" content="Building brands ready for tommorow // brand strategy, brand design, web design, no-code development.">
 
@@ -30,7 +30,7 @@
 
     <meta property="og:type" content="website">
 
-    <meta property="og:title" content="Anmol | Editor Portfolio">
+    <meta property="og:title" content="Anmolpreet Singh | Video Editor">
 
     <meta property="og:description" content="Building brands ready for tommorow // brand strategy, brand design, web design, no-code development.">
 
@@ -40,7 +40,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:title" content="Anmol | Editor Portfolio">
+    <meta name="twitter:title" content="Anmolpreet Singh | Video Editor">
 
     <meta name="twitter:description" content="Building brands ready for tommorow // brand strategy, brand design, web design, no-code development.">
 
@@ -903,11 +903,11 @@
   white-space:nowrap;
 }
 [data-framer-name="Logo"]::before{
-  content:"Anmol"; top:1px;
-  font-weight:800; font-size:15px; line-height:17px; letter-spacing:.01em;
+  content:"Anmolpreet Singh"; top:1px;
+  font-weight:800; font-size:13.5px; line-height:16px; letter-spacing:.01em;
 }
 [data-framer-name="Logo"]::after{
-  content:"Editor Portfolio"; top:19px;
+  content:"Video Editor"; top:18px;
   font-weight:600; font-size:9.5px; line-height:12px; letter-spacing:.16em;
   color:var(--anmol-red);
 }
@@ -956,6 +956,11 @@ img[src*="XTVEugPwvzlNYp700hZaD6wIU"],
 .framer-vpa0gm-container p{ white-space:nowrap!important; }
 /* inline mail link keeps the pill's own type styling */
 a.anmol-mail{ color:inherit!important; text-decoration:none!important; }
+/* Designer card portrait of the original owner */
+img[src*="8X2vzbBia6KdvsDhLXCFqhU20"]{ display:none!important; }
+[data-framer-name="Image"]:has(img[src*="8X2vzbBia6KdvsDhLXCFqhU20"]){
+  background:linear-gradient(155deg,var(--anmol-graphite) 0%,var(--anmol-mauve) 60%,var(--anmol-red) 100%)!important;
+}
 </style>
 </head>
 
@@ -1112,16 +1117,32 @@ for IdoSell Team</p></div></div></div></div></div></div></div></div></div></div>
   // so the rebrand and the phone row are re-applied after every render.
   var RULES=[
     [/Book a 30[-–\s]?min call with/gi,"Book a 30-min intro call"],
-    [/Magdalena\s*Fudali/gi,"Anmol"],
+    [/Magdalena\s*Fudali/gi,"Anmolpreet Singh"],
     [/hi@fudali\.studio/gi,"anmoltathger@gmail.com"],
     [/fudali\.studio/gi,"anmoltathger@gmail.com"],
-    [/Magdalena/gi,"Anmol"],
-    [/Magda/gi,"Anmol"],
-    [/Fudali/gi,"Anmol"],
+    [/Magdalena/gi,"Anmolpreet Singh"],
+    [/Magda/gi,"Anmolpreet Singh"],
+    [/Fudali/gi,"Anmolpreet Singh"],
     [/Wrocław,?\s*Poland/gi,"India"],
-    [/GMT\+1/gi,"IST"]
+    [/GMT\+1/gi,"IST"],
+    [/over 15 years/gi,"3 years"],
+    [/15 years/gi,"3 years"],
+    [/Since 2010/gi,"Since 2023"],
+    [/Who is the designer\?/gi,"Who is the editor?"],
+    [/brand and digital/gi,"video editing and motion"],
+    [/run my own studio/gi,"work as an independent editor"],
+    [/effective design solutions/gi,"editing that holds attention"],
+    [/design solutions/gi,"editing that holds attention"]
   ];
-  var DROP=/^(Magda|Magdalena|Magdalena Fudali|Anmol)$/i;
+  var DROP=/^(Magda|Magdalena|Magdalena Fudali|Anmol|Anmolpreet Singh)$/i;
+  var BIO=[
+    [/^design\.$/i,"graphics."],
+    [/^designer$/i,"editor"]
+  ];
+  function inBio(node){
+    var el=node.parentElement;
+    return !!(el&&el.closest&&el.closest('[data-framer-name^="Hi! My name is"]'));
+  }
   var SKIP={SCRIPT:1,STYLE:1,NOSCRIPT:1};
   function inBookingPill(node){
     var el=node.parentElement;
@@ -1133,10 +1154,44 @@ for IdoSell Team</p></div></div></div></div></div></div></div></div></div></div>
       if(n.parentNode&&SKIP[n.parentNode.nodeName]) continue;
       var t=n.nodeValue,o=t;
       if(DROP.test(t.trim())&&inBookingPill(n)){ t=""; }
-      else { for(var i=0;i<RULES.length;i++) t=t.replace(RULES[i][0],RULES[i][1]); }
+      else {
+        for(var i=0;i<RULES.length;i++) t=t.replace(RULES[i][0],RULES[i][1]);
+        if(inBio(n)) for(var j=0;j<BIO.length;j++) t=t.replace(BIO[j][0],BIO[j][1]);
+      }
       if(t!==o) n.nodeValue=t;
     }
-    if(document.title!=="Anmol | Editor Portfolio") document.title="Anmol | Editor Portfolio";
+    if(document.title!=="Anmolpreet Singh | Video Editor") document.title="Anmolpreet Singh | Video Editor";
+  }
+  // The bundle re-renders with the original purple inline styles
+  var COLORS={
+    "111,99,233":"224, 66, 74", "113,99,241":"237, 71, 74", "114,99,242":"237, 71, 74",
+    "132,129,248":"201, 127, 130", "145,136,236":"127, 145, 114", "77,61,217":"201, 75, 79",
+    "151,71,255":"237, 71, 74", "145,135,235":"127, 145, 114",
+    "59,48,163":"175, 93, 99", "60,48,163":"175, 93, 99",
+    "36,27,75":"53, 53, 53", "35,27,74":"53, 53, 53",
+    "224,227,255":"234, 222, 218", "209,211,221":"220, 208, 205",
+    "187,186,192":"201, 188, 186", "133,131,142":"140, 130, 128",
+    "114,227,161":"127, 145, 114", "222,47,47":"237, 71, 74", "0,153,255":"237, 71, 74"
+  };
+  var RGB=/rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})/g;
+  function recolor(str){
+    return str.replace(RGB,function(m,r,g,b){
+      var hit=COLORS[r+","+g+","+b];
+      return hit? m.slice(0,m.indexOf("(")+1)+hit : m;
+    });
+  }
+  function scrubColors(){
+    document.querySelectorAll('[style*="rgb"]').forEach(function(el){
+      var st=el.getAttribute("style");
+      var out=recolor(st);
+      if(out!==st) el.setAttribute("style",out);
+    });
+    document.querySelectorAll('[fill^="rgb"],[stop-color^="rgb"]').forEach(function(el){
+      ["fill","stop-color"].forEach(function(a){
+        var v=el.getAttribute(a);
+        if(v){ var o=recolor(v); if(o!==v) el.setAttribute(a,o); }
+      });
+    });
   }
   function build(){
     var row=document.createElement("div");
@@ -1167,9 +1222,9 @@ for IdoSell Team</p></div></div></div></div></div></div></div></div></div></div>
         img.alt="Anmol Editor Portfolio project";
     });
   }
-  // The Framer bundle re-injects the original booking link on every render
+  // The bundle re-injects the original booking and LinkedIn links on every render
   function scrubLinks(){
-    document.querySelectorAll('a[href*="calendar.google.com"]').forEach(function(a){
+    document.querySelectorAll('a[href*="calendar.google.com"],a[href*="linkedin.com"]').forEach(function(a){
       a.setAttribute("href","#");
       a.removeAttribute("target");
       a.removeAttribute("rel");
@@ -1215,7 +1270,7 @@ for IdoSell Team</p></div></div></div></div></div></div></div></div></div></div>
       a.setAttribute("rel","noopener");
     });
   }
-  function apply(){ scrub(document.body); scrubAlts(); scrubLinks(); wireCta(); wireMail(); mountPhones(); }
+  function apply(){ scrub(document.body); scrubAlts(); scrubLinks(); scrubColors(); wireCta(); wireMail(); mountPhones(); }
   var pending=null, obs=null;
   function schedule(){
     if(pending) return;

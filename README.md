@@ -1,6 +1,6 @@
-# Anmol Editor Portfolio
+# Anmolpreet Singh - Video Editor Portfolio
 
-Animated portfolio site for **Anmol Editor Portfolio**, plus the scraping pipeline used to build the original layout reference from [Fudali Studio](https://fudali.studio/?ref=killerportfolio).
+Animated portfolio site for **Anmolpreet Singh**, video editor, plus the scraping pipeline used to build the original layout reference from [Fudali Studio](https://fudali.studio/?ref=killerportfolio).
 
 ---
 
