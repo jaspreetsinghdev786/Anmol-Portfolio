@@ -1,6 +1,21 @@
-# Anmol Bai - Fudali Studio Complete Scraper & Animated Website Clone
+# Anmol Editor Portfolio
 
-This project contains the complete scraped dataset, scraping pipelines, and the complete animated website replica of [Fudali Studio](https://fudali.studio/?ref=killerportfolio).
+Animated portfolio site for **Anmol Editor Portfolio**, plus the scraping pipeline used to build the original layout reference from [Fudali Studio](https://fudali.studio/?ref=killerportfolio).
+
+---
+
+## Brand Palette
+
+| Swatch | Hex | Name | Used for |
+|---|---|---|---|
+| ⬜ | `#EADEDA` | Dust Grey | Light section backgrounds, wordmark text |
+| 🟩 | `#7F9172` | Dusty Olive | Secondary accents, former green/lavender highlights |
+| ⬛ | `#353535` | Graphite | Dark backgrounds, deep surfaces |
+| 🟥 | `#AF5D63` | Dusty Mauve | Deep accent, gradient ends, hover states |
+| 🟥 | `#ED474A` | Strawberry Red | Primary accent: headlines, links, slashes, CTAs |
+
+The original purple Framer theme was remapped to this palette across all 857 inline
+color literals in `index.html`. The pre-rebrand file is kept at `index_purple_backup.html`.
 
 ---
 
