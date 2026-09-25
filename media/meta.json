@@ -1,0 +1,102 @@
+{
+  "creator-intro": {
+    "duration": 22.61,
+    "orientation": "portrait"
+  },
+  "garage-hook-a": {
+    "duration": 21.25,
+    "orientation": "portrait"
+  },
+  "garage-hook-b": {
+    "duration": 21.25,
+    "orientation": "portrait"
+  },
+  "tonino-01": {
+    "duration": 23.08,
+    "orientation": "portrait"
+  },
+  "tonino-02": {
+    "duration": 22.02,
+    "orientation": "portrait"
+  },
+  "tonino-03": {
+    "duration": 18.22,
+    "orientation": "portrait"
+  },
+  "tonino-04": {
+    "duration": 21.8,
+    "orientation": "portrait"
+  },
+  "tonino-05": {
+    "duration": 20.61,
+    "orientation": "portrait"
+  },
+  "tonino-06": {
+    "duration": 25.54,
+    "orientation": "portrait"
+  },
+  "ran-from-the-scene": {
+    "duration": 14.57,
+    "orientation": "portrait"
+  },
+  "bodylines-jeep": {
+    "duration": 30.21,
+    "orientation": "portrait"
+  },
+  "herds-of-comedy-01": {
+    "duration": 104.64,
+    "orientation": "portrait"
+  },
+  "herds-of-comedy-02": {
+    "duration": 202.05,
+    "orientation": "portrait"
+  },
+  "improv-01": {
+    "duration": 86.66,
+    "orientation": "portrait"
+  },
+  "improv-02": {
+    "duration": 55.53,
+    "orientation": "portrait"
+  },
+  "improv-03": {
+    "duration": 79.57,
+    "orientation": "portrait"
+  },
+  "dinosaur": {
+    "duration": 46.08,
+    "orientation": "portrait"
+  },
+  "dodo": {
+    "duration": 58.69,
+    "orientation": "portrait"
+  },
+  "titanic": {
+    "duration": 69.38,
+    "orientation": "portrait"
+  },
+  "bdelloid": {
+    "duration": 62.61,
+    "orientation": "portrait"
+  },
+  "xray": {
+    "duration": 40.77,
+    "orientation": "portrait"
+  },
+  "border-explainer": {
+    "duration": 82.54,
+    "orientation": "portrait"
+  },
+  "documentary-sample": {
+    "duration": 38.76,
+    "orientation": "landscape"
+  },
+  "honey-optimization": {
+    "duration": 31.57,
+    "orientation": "portrait"
+  },
+  "wedding-night": {
+    "duration": 34.24,
+    "orientation": "portrait"
+  }
+}
