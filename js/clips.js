@@ -32,7 +32,6 @@ export const CLIPS = [
   { slug: "improv-03", title: "Improv night · 03", cat: "comedy", dur: 79.6 },
   { slug: "bdelloid", title: "Bdelloid rotifers", cat: "story", dur: 62.6 },
   { slug: "xray", title: "The first X-ray", cat: "story", dur: 40.8 },
-  { slug: "border-explainer", title: "Cross-border explainer", cat: "story", dur: 82.5 },
   { slug: "documentary-sample", title: "Documentary sample", cat: "story", dur: 38.8, landscape: true },
   { slug: "creator-intro", title: "Creator intro", cat: "creator", dur: 22.6 },
 ];

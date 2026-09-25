@@ -38,7 +38,6 @@ CLIPS = {
     "Titanic.mp4": ("titanic", 0.30),
     "final bdelloid.mp4": ("bdelloid", 0.30),
     "coco sample xray.mp4": ("xray", 0.30),
-    "Final v2.mp4": ("border-explainer", 0.20),
     "Sample Documentry.mp4": ("documentary-sample", 0.30),
     "optimization.mp4": ("honey-optimization", 0.20),
     "WED 1.mp4": ("wedding-night", 0.30),
